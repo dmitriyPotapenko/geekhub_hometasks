@@ -1,0 +1,138 @@
+# git init
+
+# git add .
+# git add name_of_file
+
+# git commit -m "Name of commit"
+
+# git push <remote> <branch>
+# git push origin master
+# git push staging master
+
+# git push origin my_branch:master
+
+# git status
+# git log
+
+## commit b6646c40d73e0fee9cff930faazcc975d1a18f6d
+## Author: Ilya Umanets <ilya.umanets.web@gmail.com>
+## Date:   Fri Oct 13 12:53:46 2017 +0300
+## Add notes for 3 lesson
+
+# git gui
+
+# commit, push (force), amend
+
+# gitk
+
+# git merge name_branch
+# git rebase name_branch (home task)
+
+
+
+
+# rebase
+# b branch
+commit 3800feeed015a4808e3677075e9d6b9aa6b2bef7
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 15:00:14 2017 +0300
+
+    b
+
+commit 8b79881056ddcc3fd48f18432204205fa1d7dedb
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:03 2017 +0300
+
+    a
+
+# c branch
+commit 4c3c7b37f92b69b9de163e74cfcf4299ab19a2fa
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:56 2017 +0300
+
+    c
+
+# git merge b
+# git merge c
+# choose c line
+
+commit c1e11561f0ca67a7e13da81516f36fb8066512dd
+Merge: 3800fee 4c3c7b3
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 15:04:42 2017 +0300
+
+    Merge branch 'c' into a
+    
+    Conflicts:
+        lesson_3/a.rb
+
+commit 3800feeed015a4808e3677075e9d6b9aa6b2bef7
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 15:00:14 2017 +0300
+
+    b
+
+commit 4c3c7b37f92b69b9de163e74cfcf4299ab19a2fa
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:56 2017 +0300
+
+    c
+
+commit 8b79881056ddcc3fd48f18432204205fa1d7dedb
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:03 2017 +0300
+
+    a
+
+
+# git rebase b
+
+commit 3800feeed015a4808e3677075e9d6b9aa6b2bef7
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 15:00:14 2017 +0300
+
+    b
+
+commit 8b79881056ddcc3fd48f18432204205fa1d7dedb
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:03 2017 +0300
+
+    a
+
+# git rebase c after b rebasing
+# choose c line
+# Applying: b
+# No changes - did you forget to use 'git add'?
+
+commit 4c3c7b37f92b69b9de163e74cfcf4299ab19a2fa
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:56 2017 +0300
+
+    c
+
+commit 8b79881056ddcc3fd48f18432204205fa1d7dedb
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:03 2017 +0300
+
+    a
+
+# git rebase c after b rebasing
+# choose b line
+
+commit abdbfb32d4bcf0c61c1e337cfa9000cf0e2b0e68
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 15:00:14 2017 +0300
+
+    b
+
+commit 4c3c7b37f92b69b9de163e74cfcf4299ab19a2fa
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:56 2017 +0300
+
+    c
+
+commit 8b79881056ddcc3fd48f18432204205fa1d7dedb
+Author: IlyaUmanets <strateg2claria@gmail.com>
+Date:   Wed Oct 18 14:59:03 2017 +0300
+
+    a
