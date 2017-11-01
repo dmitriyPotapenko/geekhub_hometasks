@@ -1,0 +1,5 @@
+rails g model user name
+rails g model profile user:belongs_to
+rails g model ticket name user:belongs_to
+rails g model category name
+

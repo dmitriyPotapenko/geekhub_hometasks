@@ -1,0 +1,36 @@
+get 'index_route', controller: 'welcome', action: 'index'
+get 'index', to: 'welcome#index', as: 'ok'
+get 'index/:some_params', to: 'welcome#index'
+
+resources :users do
+  resource :profile
+end
+
+resources :tickets, only: [:index]
+
+resources :cards do
+  get 'some'
+  get 'hello'
+
+  get 'member_route', on: :member
+
+  member do
+    get 'card_member'
+    get 'hello_member'
+  end
+
+  collection do
+    get 'all_collection'
+    get 'another_collection'
+  end
+end
+
+namespace :admin do
+  resources :users
+end
+
+scope :admin do
+  resources :posts
+end
+
+http://rusrails.ru/rails-routing

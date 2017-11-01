@@ -1,0 +1,7 @@
+user.tickets.pluck(:name) vs user.tickets.map(&:name)
+
+Create the "Airport" app.
+
+Planes, users, countries, cities, tickets,. etc.
+
+Create the same app. Choose another topic.

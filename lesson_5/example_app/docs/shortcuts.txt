@@ -1,0 +1,26 @@
+Ubuntu
+
+Windows + 1 => move to tab
+
+Chrome
+
+Ctrl + T -> open new tab
+Ctrl + W -> close tab
+Alt + 1 -> move to tab
+Ctrl + Shift + J -> open inspect
+
+Terminal
+
+Ctrl + Shift + T
+
+Sublime
+
+Alt + 1 -> move to tab
+Ctrl + W -> close tab
+Ctrl + P -> find file
+F12 -> go to file
+Ctrl + D -> select all matches
+Shift + -> -< -> select letters
+Ctrl + / - comment line
+
+Emmet
